@@ -3,7 +3,7 @@ import json
 from Scripts.pyspark_schema_creator import generate_schema as generate_schema_spark
 import black
 
-file_name = "sample_data" # Change this to the path of your JSON file - don't include the .json extension
+file_name = ".\\Sample Data\\sample_data" # Change this to the path of your JSON file - don't include the .json extension
 
 def generate_schema(data):
     if isinstance(data, dict):
@@ -12,8 +12,6 @@ def generate_schema(data):
         return [generate_schema(data[0])]
     else:
         return type(data).__name__
-
-
 
 def replace_values(schema):
     if isinstance(schema, dict):
