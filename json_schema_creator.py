@@ -1,6 +1,6 @@
 from deepmerge import Merger
 import json
-from pyspark_schema_creator import generate_schema as generate_schema_spark
+from Scripts.pyspark_schema_creator import generate_schema as generate_schema_spark
 import black
 
 file_name = "sample_data" # Change this to the path of your JSON file - don't include the .json extension
