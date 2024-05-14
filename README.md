@@ -1,4 +1,4 @@
-# JSON to PySpark Schema Generator
+# JSON to JSON and PySpark Schema Generator
 This repository contains Python scripts that can generate JSON and PySpark schemas from JSON data. The scripts are designed to handle complex, nested JSON structures and output a PySpark schema that can be used to read the JSON data into a PySpark DataFrame.
 
 ## Files in this Repository
