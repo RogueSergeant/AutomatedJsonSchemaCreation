@@ -12,9 +12,9 @@ This repository contains Python scripts that can generate JSON and PySpark schem
 
 ## How to Use
 1. Install the required Python packages by running:
-   '''
+   ```
    pip install -r requirements.txt
-   '''
+   ```
 
 2. Update the file_name variable in json_schema_creator.py to the path of your JSON file (don't include the .json extension).
 
