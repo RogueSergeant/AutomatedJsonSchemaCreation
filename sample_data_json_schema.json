@@ -1,0 +1,30 @@
+{
+    "name": "str",
+    "address": {
+        "street": "str",
+        "city": "str",
+        "state": "str",
+        "postalCode": "str"
+    },
+    "departments": [
+        {
+            "name": "str",
+            "employees": [
+                {
+                    "firstName": "str",
+                    "lastName": "str",
+                    "age": "int",
+                    "address": {
+                        "street": "str",
+                        "city": "str",
+                        "state": "str",
+                        "postalCode": "str"
+                    },
+                    "skills": [
+                        "str"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,5 +1,9 @@
 from deepmerge import Merger
 import json
+from pyspark_schema_creator import generate_schema as generate_schema_spark
+import black
+
+file_name = "sample_data" # Change this to the path of your JSON file - don't include the .json extension
 
 def generate_schema(data):
     if isinstance(data, dict):
@@ -51,15 +55,19 @@ def main(data):
         schema = generate_schema(data)
         master_schema = custom_merger.merge(master_schema, schema)
 
-    print(json.dumps(master_schema, indent=4))
+    with open(f"{file_name}_json_schema.json", 'w') as f:
+        json.dump(master_schema, f, indent=4)
 
     master_schema_adjusted = replace_values(master_schema)
-
-    print(json.dumps(master_schema_adjusted, indent=4))
+    
+    spark_schema = generate_schema_spark(master_schema_adjusted)
+    
+    with open(f"{file_name}_spark_schema.txt", 'w') as f:
+        f.write(black.format_str(spark_schema, mode=black.FileMode()))
     
 if __name__ == "__main__":
-    data = json.load("data.json")
-    
-    dataType = type(data)
-    
-    main(data, dataType)
+        
+    with open(f"{file_name}.json") as f:
+        data = json.load(f)
+        
+    main(data)

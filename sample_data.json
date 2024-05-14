@@ -1,0 +1,130 @@
+[
+    {
+        "name": "Tech Corp",
+        "address": {
+            "street": "123 Tech St",
+            "city": "Silicon Valley",
+            "state": "CA",
+            "postalCode": "94043"
+        },
+        "departments": [
+            {
+                "name": "Engineering",
+                "employees": [
+                    {
+                        "firstName": "John",
+                        "lastName": "Doe",
+                        "age": 30,
+                        "address": {
+                            "street": "456 Engineer Rd",
+                            "postalCode": "94043"
+                        },
+                        "skills": ["Python"]
+                    },
+                    {
+                        "firstName": "Jane",
+                        "lastName": "Doe",
+                        "age": 28,
+                        "address": {
+                            "street": "789 Engineer Ln",
+                            "city": "Silicon Valley",
+                            "state": "CA",
+                            "postalCode": "94043"
+                        },
+                        "skills": ["JavaScript", "HTML", "CSS"]
+                    }
+                ]
+            },
+            {
+                "name": "Marketing",
+                "employees": [
+                    {
+                        "firstName": "Alice",
+                        "lastName": "Smith",
+                        "age": 25,
+                        "address": {
+                            "street": "123 Marketing Blvd",
+                            "city": "Silicon Valley",
+                            "state": "CA",
+                            "postalCode": "94043"
+                        }
+                    },
+                    {
+                        "firstName": "Bob",
+                        "lastName": "Johnson",
+                        "age": 27,
+                        "address": {
+                            "street": "456 Marketing Ave",
+                            "city": "Silicon Valley",
+                            "state": "CA"
+                        },
+                        "skills": ["Market Research", "Social Media", "Data Analysis"]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Biz Inc",
+        "departments": [
+            {
+                "name": "Sales",
+                "employees": [
+                    {
+                        "firstName": "Charlie",
+                        "lastName": "Brown",
+                        "age": 35,
+                        "address": {
+                            "street": "123 Sales St",
+                            "city": "Business City",
+                            "state": "NY",
+                            "postalCode": "10001"
+                        },
+                        "skills": ["Negotiation", "Customer Service", "Lead Generation"]
+                    },
+                    {
+                        "firstName": "Diana",
+                        "lastName": "Ross",
+                        "age": 32,
+                        "address": {
+                            "street": "456 Sales Rd",
+                            "city": "Business City",
+                            "state": "NY",
+                            "postalCode": "10001"
+                        },
+                        "skills": ["Communication", "CRM", "Time Management"]
+                    }
+                ]
+            },
+            {
+                "name": "HR",
+                "employees": [
+                    {
+                        "firstName": "Edward",
+                        "lastName": "Williams",
+                        "age": 40,
+                        "address": {
+                            "street": "789 HR Ave",
+                            "city": "Business City",
+                            "state": "NY",
+                            "postalCode": "10001"
+                        },
+                        "skills": ["Recruiting", "Employee Relations", "Benefits Administration"]
+                    },
+                    {
+                        "firstName": "Fiona",
+                        "lastName": "Johnson",
+                        "age": 38,
+                        "address": {
+                            "street": "123 HR Blvd",
+                            "city": "Business City",
+                            "state": "NY",
+                            "postalCode": "10001"
+                        },
+                        "skills": ["HRIS", "Performance Management", "Training & Development"]
+                    }
+                ]
+            }
+        ]
+    }
+]

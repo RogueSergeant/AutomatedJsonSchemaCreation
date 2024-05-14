@@ -1,0 +1,64 @@
+StructType(
+    [
+        StructField("name", StringType(), True),
+        StructField(
+            "address",
+            StructType(
+                [
+                    StructField("street", StringType(), True),
+                    StructField("city", StringType(), True),
+                    StructField("state", StringType(), True),
+                    StructField("postalcode", StringType(), True),
+                ]
+            ),
+            True,
+        ),
+        StructField(
+            "departments",
+            ArrayType(
+                StructType(
+                    [
+                        StructField("name", StringType(), True),
+                        StructField(
+                            "employees",
+                            ArrayType(
+                                StructType(
+                                    [
+                                        StructField("firstname", StringType(), True),
+                                        StructField("lastname", StringType(), True),
+                                        StructField("age", IntegerType(), True),
+                                        StructField(
+                                            "address",
+                                            StructType(
+                                                [
+                                                    StructField(
+                                                        "street", StringType(), True
+                                                    ),
+                                                    StructField(
+                                                        "city", StringType(), True
+                                                    ),
+                                                    StructField(
+                                                        "state", StringType(), True
+                                                    ),
+                                                    StructField(
+                                                        "postalcode", StringType(), True
+                                                    ),
+                                                ]
+                                            ),
+                                            True,
+                                        ),
+                                        StructField(
+                                            "skills", ArrayType(StringType()), True
+                                        ),
+                                    ]
+                                )
+                            ),
+                            True,
+                        ),
+                    ]
+                )
+            ),
+            True,
+        ),
+    ]
+)
