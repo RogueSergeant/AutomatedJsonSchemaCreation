@@ -20,7 +20,7 @@ This repository contains Python scripts that can generate JSON and PySpark schem
 
 3. Run json_schema_creator.py. This will generate two files: a JSON schema and a PySpark schema. The JSON schema will be saved as {file_name}_json_schema.json and the PySpark schema will be saved as {file_name}_spark_schema.txt.
 
-Please note that the scripts are designed to handle JSON data that is structured as a list of dictionaries, where each dictionary can contain nested dictionaries and lists. If your JSON data is structured differently, you may need to modify the scripts.
+Please note that the scripts are designed to handle both JSON data that is a single dictionary, or is structured as a list of dictionaries, where each dictionary can contain nested dictionaries and lists. If your JSON data is structured differently, you may need to modify the scripts.
 
 ## Credit where credit is due
 The pyspark_schema_creator.py script is based on the fantastic work done by [preetranjan](https://preetranjan.github.io/pyspark-schema-generator/) who created a page with JavaScript to enable JSON data to be converted into a PySpark schema. I have modified it to work as Python, and of course the main function of my script is to take complex JSON data, flatten the schema and then convert it to a PySpark schema.
